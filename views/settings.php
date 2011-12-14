@@ -1,7 +1,7 @@
 <div class="wrap">
 	<h2><?php _e( 'Minimum Password Strength', 'minimum-password-strength' ); ?></h2>
-	<form method="post" action="options.php">
-        <?php wp_nonce_field( 'update_minimum_password_strength' ); ?>
+	<form method="post">
+        <?php echo wp_nonce_field( 'update_minimum_password_strength' ); ?>
 		<table class="form-table">
 			<tr>
 				<th><label for="strength"><?php _e( 'Password must be at least', 'minimum-password-strength' ); ?></label></th>

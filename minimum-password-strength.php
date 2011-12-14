@@ -22,7 +22,7 @@
 	
 	public static $strengths = array(
 		2 => 'Weak',
-		3 => 'Good',
+		3 => 'Medium',
 		4 => 'Strong',
 	);
 
@@ -58,8 +58,8 @@
 	}
 
 	public static function show_settings_page() {
-		if ( isset( $_POST['submit'] ) && isset( $_POST['_nonce'] ) &&
-                wp_verify_nonce( $_POST['_nonce'], 'update_minimum_password_strength' ) ) {
+		if ( isset( $_POST['submit'] ) && isset( $_POST['_wpnonce'] ) &&
+                wp_verify_nonce( $_POST['_wpnonce'], 'update_minimum_password_strength' ) ) {
 			$strength = intval( $_POST['strength'] );
 			update_option( self::STRENGTH_KEY, $strength );
 		}
