@@ -59,7 +59,7 @@
 
 	public static function show_settings_page() {
 		if ( isset( $_POST['submit'] ) && isset( $_POST['_wpnonce'] ) &&
-                wp_verify_nonce( $_POST['_wpnonce'], 'update_minimum_password_strength' ) ) {
+				wp_verify_nonce( $_POST['_wpnonce'], 'update_minimum_password_strength' ) ) {
 			$strength = intval( $_POST['strength'] );
 			update_option( self::STRENGTH_KEY, $strength );
 		}
@@ -70,9 +70,9 @@
 		include plugin_dir_path( __FILE__ ) . 'views/settings.php';
 	}
 
-    public static function get_required_strength() {
-        return get_option( self::STRENGTH_KEY, self::DEFAULT_REQUIRED_STRENGTH );
-    }
+	public static function get_required_strength() {
+		return get_option( self::STRENGTH_KEY, self::DEFAULT_REQUIRED_STRENGTH );
+	}
 
 	public static function get_password_strength( $username, $password1, $password2 ) {
 		$symbolSize = 0;
