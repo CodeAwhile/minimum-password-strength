@@ -34,9 +34,15 @@
 	public static function check_password_strength( $errors ) {
 		$password1 = isset( $_POST['pass1'] ) ? $_POST['pass1'] : '';
 		$password2 = isset( $_POST['pass2'] ) ? $_POST['pass2'] : '';
-		$user_id = intval( $_POST['user_id'] );
-		$user = get_userdata( $user_id );
-		$username = $user->user_login;
+		if ( isset( $_POST['user_id'] ) ) {
+			// Editing user profile page
+			$user_id = intval( $_POST['user_id'] );
+			$user = get_userdata( $user_id );
+			$username = $user->user_login;
+		} else {
+			// Creating a new user
+			$username = $_POST['user_login'];
+		}
 		
 		if ( empty( $password1 ) && empty( $password2 ) ) {
 			return;
