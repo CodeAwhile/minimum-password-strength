@@ -1,10 +1,10 @@
-=== Minimum Password Strength ===
-Contributors: itsananderson, zer0divisor
+﻿=== Minimum Password Strength ===
+Contributors: itsananderson, Zer0Divisor
 Donate link: 
 Tags: security, password, administration
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
