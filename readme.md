@@ -35,7 +35,7 @@ Installation
 Changelog
 ---------
 
-#### 1.2.0 = ####
+#### 1.2.0 ####
 * Enforce password strength during password reset
 * Update "Tested up to" tag
 

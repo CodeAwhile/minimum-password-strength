@@ -28,7 +28,7 @@ For now, all users have the same password strength requirements, but a later rel
 
 == Changelog ==
 
-= 1.2.0 ==
+= 1.2.0 =
 * Enforce password strength during password reset
 * Update "Tested up to" tag
 
