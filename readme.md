@@ -1,10 +1,13 @@
 Minimum Password Strength
 =========================
-* Contributors: itsananderson, Zer0Divisor
+* Contributors: [itsananderson](http://profiles.wordpress.org/itsananderson),
+  [Zer0Divisor](http://profiles.wordpress.org/Zer0Divisor)
 * Donate link: 
-* Tags: [security](http://wordpress.org/extend/plugins/tags/security), [password](http://wordpress.org/extend/plugins/tags/password), [administration](http://wordpress.org/extend/plugins/tags/administration)
+* Tags: [security](http://wordpress.org/extend/plugins/tags/security),
+  [password](http://wordpress.org/extend/plugins/tags/password),
+  [administration](http://wordpress.org/extend/plugins/tags/administration)
 * Requires at least: 3.0
-* Tested up to: 4.0
+* Tested up to: 4.4.2
 * Stable tag: 1.1.2
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
